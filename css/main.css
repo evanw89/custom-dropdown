@@ -1,0 +1,75 @@
+#bounding-box {
+	width: 300px;
+	padding: 35px 50px;
+	background-image: url("../img/box.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#bounding-box > div {
+	padding: 10px 0;
+}
+.select-style {
+    /*border: 1px solid #ccc;*/
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #FFF;
+    background-image: url("../img/dropdown-closed.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: visible;
+}
+.select-style:has(#custom-select.open) {
+	background-image: none;
+}
+.select-style select {
+	width: 100%;
+    padding: 5px 8px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+select {
+	display: none;
+}
+#custom-select {
+	position: absolute;
+	margin: 0;
+	height: 30px;
+	width: 100%;
+	padding-left: 0;
+}
+#custom-select.open {
+	padding-top: 40px;
+	height: initial;
+	background-color: #FFF;
+	background-image: url("../img/dropdown-open.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#custom-select li {
+	display: none;
+}
+#custom-select.open li {
+	display: block;
+	padding: 10px 0 13px 40px;
+}
+#custom-select li:hover {
+	background-image: url("../img/line.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: 15% bottom;
+}
+input {
+	float: right;
+	margin-right: 38px;
+}
